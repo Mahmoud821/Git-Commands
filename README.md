@@ -4,8 +4,8 @@ Git tracks the changes on the files in every commit not copy the entire project 
 git show <commit_id> 
 ```
 - <Commit\_id>: Can be `full id` Or `first 7 digits`.
--- full id: 18497d7...061f459
--- first 7 digits: 18497d7
+  - full id: 18497d7...061f459
+  - first 7 digits: 18497d7
 
 ## Symbols
 | Symbol | Meaning |
@@ -18,9 +18,9 @@ git show <commit_id>
 
 | Command | Option | Argument | Description |
 | ------- | ------ | -------- | ----------- |
-| git config user. name | --global | github_username | ----------- |
+| git config user\.name | --global | github_username | ----------- |
 | git config user\.email | --global | github_email | ----------- |
-| git init | ------ | -------- | ----------- |
+| git init | ------ | -------- | Initialize the local git repository |
 | git status | ------ | -------- | ----------- |
 | git add | ------ | < file\_name > Or < file\_name`1` file_name`2` ... > Or < * > Or < . > Or < . . >| from the working directory to the staging area. |
 | git restore | ------ | < file\_name > Or < file\_name`1` file_name`2` ... > Or < * > Or < . > Or < . . > | if the file was in the staging area and we modified it again and want to discard the new changes, we can restore it from the same file in the staging area, it will only discard the new changes and the file will not be unstaged from the staging area. |
