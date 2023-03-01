@@ -6,6 +6,7 @@ git show <commit_id>
 - <Commit\_id>: Can be `full id` Or `first 7 digits`.
   - full id: 18497d7...061f459
   - first 7 digits: 18497d7
+![git stages with reset](https://www.howtogeek.com/wp-content/uploads/csit/2021/07/f5026f58.png?trim=1,1&bg-color=000&pad=1,1)
 
 ## Symbols
 | Symbol | Meaning |
