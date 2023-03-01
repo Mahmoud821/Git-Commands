@@ -28,6 +28,7 @@ git show <commit_id>
 | git restore | ------ | < file\_name > Or < file\_name`1` file_name`2` ... > Or < * > Or < . > Or < . . > | if the file was in the staging area and we modified it again and want to discard the new changes, we can restore it from the same file in the staging area, it will only discard the new changes and the file will not be unstaged from the staging area. |
 | git restore | -staged | < file\_name > Or < file\_name`1` file_name`2` ... > Or < * > Or < . > Or < . . > | undo [git add], remove any file we specify from the staging area without any modification to the working directory. |
 | git commit | -m | < message > | from staging area to the local repo |
+| git commit | --amend -m | 'message' | if you want to rewrite a new message for the last commit or want to add another file modification with the last commit, you can add that file to the staging area and then commit it using that commit to add that file modification to the last commit. |
 | git revert | ------ | < commit_id >  | reverse the effect of some earlier commits (often only a faulty one) as a new commit, like undo. |
 | git reset | --soft |  < commit_id > | uncommit changes, changes are left staged (index). |
 | git reset | --mixed |  < commit_id > | (default): uncommit + unstage changes, changes are left in working tree. |
@@ -44,11 +45,14 @@ git show <commit_id>
 | git remote | ------ | -------- | display all created variables that store repo_links. |
 | git remote | -v | -------- | display all created variables with stored repo_links |
 | git remote add origin | ------ | < repo\_link > | set the variable [origin = repo\_link] to < push, pull, ...> without writing the full [repo_link] every time. |
+| git remote rename  | ------ | < current_name > < new_name > | to rename a remote repository variable |
 | git remote rm origin | ------ | -------- | remove the variable [origin] that carries the repo_link |
 | git push | ------ | [< repo\_link > Or < variable\_pointed\_to\_repo > ] < branch\_name > |  push the local\_repo into the global_repo, example: git push origin master |
 | git pull | ------ | [< repo\_link > Or < variable\_pointed\_to\_repo > ] < branch\_name > |  pull the latest global\_repo update into the local_repo to continue development from the last update(commit) if you want the last update, example: git pull origin master |
 | git branch | ------ | -------- | display all existing branches |
 | git branch | < branch_name > | -------- | create a new branch starting from the commit that the head pointed on |
+| git branch | -m | new_name | to rename the current branch name |
 | git merge  | ------ | < brance_name > | merge the specified branch with the currently used branch |
+| git clone | ------ | repo_link | clone a repo and create a new variable [origin = cloned_repo_link]. |
 | ------- | ------ | -------- | ----------- |
 
