@@ -12,7 +12,7 @@ git show <commit_id>
 | ------ | ------- |
 | Asterisk (\*)  | All files that have the **current** directory in their path |
 | Dot (.) | All files that have the **current** directory in their path |
-| Double dots (. .) | All files that have the **parent** directory in their path |
+| Double dots (..) | All files that have the **parent** directory in their path |
 
 ## Commands
 
@@ -35,7 +35,9 @@ git show <commit_id>
 | git log | --oneline | -------- | display all commit history with a short format |
 | git log | --state | -------- | more data about ["the files that were modified in each commit", "the number of lines added or removed", ...] |
 | git show | ------ | < commit\_id > | display the changed data in that commit, the default commit_id is where the head pointed |
-| git diff | ------ | < first\_commit\_id second\_commit_id > | ----------- |
+| git diff | --staged | -------- | View the difference between the [last commit] in the branch and the [staging area] |
+| git diff head | ------ | -------- | View the difference between the [last commit] in the branch and the tracked files in the [Working Directory] no matter whether staged or not |
+| git diff | ------ | < first\_commit\_id second\_commit_id > | display the changes that happened to the first_commit to be like the second_commit, the order is matter |
 | git checkout | ------ | < commit\_id > Or < branch_name > | switch branch, or go to a specific commit, change the head pointer to go wherever we want on the project's [branches and commits] |
 | git remote | ------ | -------- | display all created variables that store repo_links. |
 | git remote | -v | -------- | display all created variables with stored repo_links |
