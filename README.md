@@ -22,8 +22,7 @@ If applied, this commit will ...
 Make it composed of an informative header with no more than 50 characters and detailed dotted messages for the body.
 `e.g`
 
-![ good commit message ](https://github.com/[Mahmoud821]/[Git-Commands]/blob/[master]/images/good-commit-message.png?raw=true)
-
+![ good commit message ](https://github.com/Mahmoud821/Git-Commands/tree/master/images/good-commit-message.png?raw=true)
 
 ## Symbols
 | Symbol | Meaning |
